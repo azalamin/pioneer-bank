@@ -53,9 +53,14 @@ withdrawBtn.addEventListener("click", function () {
   }
   const currentDepositAmount = mainBalance.innerText;
   const currentDepositAmountToNum = parseFloat(currentDepositAmount);
-  const remainBalance = currentDepositAmountToNum - totalWithdraw;
+  const remainBalance = currentDepositAmountToNum - currentWithdrawNumber;
   if (!isNaN(remainBalance)) {
     mainBalance.innerText = remainBalance;
+  }
+  if(currentDepositAmountToNum == 0){
+    alert('You have no sufficient balance')
+    mainBalance.innerText = '0';
+    withdrawBalance.innerText = currentWithdrawConvertToNum;
   }
   withdrawInput.value = "";
 });
