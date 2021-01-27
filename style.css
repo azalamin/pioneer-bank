@@ -1,0 +1,16 @@
+body{
+   padding: 100px;
+}
+#login-form,.input-live-transction{
+   box-shadow: 5px 5px 10px grey;
+   border-radius: 10px;
+}
+#transaction-area{
+   display: none;
+}
+.transaction-card{
+   border-radius: 10px;
+}
+.transaction-card h1{
+   font-size: 40px;
+}
